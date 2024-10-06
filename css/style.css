@@ -59,16 +59,9 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  /* width: 550px;
-  height: 120px;*/
 }
 .hero-button {
-  /* border-radius: 4px;
-  padding: 16px 32px;
-  width: 175px;
-  height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: #4d5ae5; */
+  background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -79,22 +72,6 @@ button {
 .hero-button:hover {
   background-color: #404bbf;
 }
-/* .features-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
-/* .features-item {
-  width: 264px;
-} */
 .features-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -119,12 +96,6 @@ button {
   text-transform: capitalize;
 }
 .team-list-item {
-  /* border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08); */
   background: #fff;
 }
 .team-list-title {
@@ -149,14 +120,7 @@ button {
   color: #2e2f42;
   text-transform: capitalize;
 }
-.portfolio-list-item {
-  /* border: 1px solid #e7e9fc;
-  width: 360px;
-  height: 420px; */
-}
-.portfolio-list-png {
-  /* height: 300px;*/
-}
+
 .portfolio-list-title {
   font-size: 20px;
   line-height: 120%;
@@ -186,7 +150,6 @@ button {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  /* width: 264px; */
 }
 .footer-logo-span {
   color: #f4f4fd;
