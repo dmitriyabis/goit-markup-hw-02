@@ -34,6 +34,7 @@ img {
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -52,7 +53,7 @@ img {
 .header-menu-list {
   display: flex;
   gap: 40px;
-  margin: 24px 332px 24px 0;
+  padding: 24px 0;
 }
 .header-menu-link {
   font-weight: 500;
@@ -176,8 +177,8 @@ img {
 }
 .team-list-item {
   background: #fff;
-  width: calc(100%-72px) \4;
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 .team-div-tittle-text {
   padding: 32px 0;
