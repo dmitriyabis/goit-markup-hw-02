@@ -10,6 +10,15 @@ body {
   max-width: 1158px;
   margin: 0 auto;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -70,6 +79,7 @@ img {
 }
 .header-addres {
   font-style: normal;
+  margin-left: auto;
 }
 .header-contacts-list {
   display: flex;
@@ -88,9 +98,12 @@ img {
   color: #404bbf;
 }
 .hero {
-  background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+    url(/images/hero-bg.jpg);
+  max-width: 100%;
+  background-position: center;
 }
 .hero-title {
   font-weight: 700;
@@ -200,6 +213,24 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+.social-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.social-item-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.social-item-link:hover {
+  background-color: #31d0aa;
 }
 .portfolio {
   padding-top: 120px;
@@ -223,6 +254,17 @@ img {
 }
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.portfolio-list-item:hover {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+.portfolio-list-item:hover .overlay {
+  transform: translateY(0);
 }
 .portfolio-div-title-text {
   padding: 32px 16px;
@@ -241,6 +283,23 @@ img {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 301px;
+  padding: 40px 32px;
+  transform: translateY(140%);
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.2em;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 0.5s ease;
 }
 .footer {
   background-color: #2e2f42;
@@ -267,4 +326,33 @@ img {
 }
 .footer-logo-span {
   color: #f4f4fd;
+}
+.foooter-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffff;
+  margin-bottom: 16px;
+}
+.footer-flex-container {
+  display: flex;
+  gap: 120px;
+}
+.footer-social-list {
+  display: flex;
+  gap: 8px;
+  justify-content: start;
+}
+.footer-social-item-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.footer-social-item-link:hover {
+  background-color: #31d0aa;
 }
