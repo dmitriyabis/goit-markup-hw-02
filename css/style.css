@@ -705,8 +705,8 @@ img {
   justify-content: center;
   fill: transparent;
 }
-.privacy-input:checked + label .privacy-label-span {
+.privacy-input:checked + label > .privacy-label-span {
   background-color: #404bbf;
-  border: none;
   fill: #ffff;
+  border: none;
 }
