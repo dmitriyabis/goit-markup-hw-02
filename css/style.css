@@ -668,8 +668,8 @@ img {
 .modal-btn-close:focus .btn-close-svg {
   fill: #ffffff;
 }
-.modal-btn-close:focus .btn-close-svg,
-.modal-btn-close:hover .btn-close-svg {
+.modal-btn-close:focus + .btn-close-svg,
+.modal-btn-close:hover + .btn-close-svg {
   fill: #ffffff;
 }
 .modal-privacy {
@@ -707,12 +707,7 @@ img {
   justify-content: center;
   fill: transparent;
 }
-.privacy-label-span:hover {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffff;
-}
-.privacy-input:checked + .privacy-label-span {
+.privacy-input:checked + label .privacy-label-span {
   background-color: #404bbf;
   border: none;
   fill: #ffff;
