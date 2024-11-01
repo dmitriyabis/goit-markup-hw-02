@@ -572,26 +572,26 @@
             <label for="user-comment" class="modal-form-label"> Comment </label>
             <textarea
               class="modal-massage"
-              name="user-message"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
-            <div class="modal-privacy">
-              <input
-                type="checkbox"
-                name="user-privacy"
-                id="user-privacy"
-                class="privacy-input"
-                required
-                value="true"
-              />
-              <span class="privacy-span"
-                >I accept the terms and conditions of the
-                <a class="privacy-link" href="">Privacy Policy</a></span
-              >
-            </div>
-            <button type="submit" class="modal-form-btn">Send</button>
           </div>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              class="privacy-input visually-hidden"
+              required
+              value="true"
+            />
+            <label for="user-privacy" class="privacy-label"
+              >I accept the terms and conditions of the
+              <a class="privacy-link" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button type="submit" class="modal-form-btn">Send</button>
         </form>
       </div>
     </div>
