@@ -476,6 +476,7 @@ img {
   fill: #ffff;
   margin-left: 16px;
 }
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -495,30 +496,12 @@ img {
   visibility: visible;
   pointer-events: auto;
 }
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-.no-scroll {
-  overflow: hidden;
-}
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 24px;
   background: #fcfcfc;
-  transform: translate(-50%, -50%) scale(1) scaleY(1) rotate(0);
+  transform: translate(-50%, -50%);
   transition: transform 300ms linear;
   width: 408px;
   min-height: 584px;
@@ -723,6 +706,6 @@ img {
 }
 .privacy-input:checked + .privacy-label > .privacy-label-span {
   background-color: #404bbf;
-  fill: #ffff;
+  fill: #f4f4fd;
   border: none;
 }
