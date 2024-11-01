@@ -626,8 +626,12 @@ img {
   margin-top: 24px;
   background: #4d5ae5;
 }
-.modal-form-btn:hover,
+
 .modal-form-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.modal-form-btn:hover {
   background-color: #404bbf;
   border: none;
 }
@@ -673,10 +677,6 @@ img {
 }
 .modal-btn-close:hover .btn-close-svg {
   fill: #ffffff;
-}
-.modal-btn-close:hover,
-.btn-close-svg:hover {
-  color: #4d5ae5;
 }
 .modal-privacy {
   display: flex;
