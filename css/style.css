@@ -662,7 +662,7 @@ img {
   border: none;
 }
 .btn-close-svg {
-  fill: currentColor;
+  fill: black;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn-close:focus .btn-close-svg {
@@ -708,6 +708,11 @@ img {
   fill: transparent;
 }
 .privacy-label-span:hover {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffff;
+}
+.privacy-input:checked + .privacy-label-span {
   background-color: #404bbf;
   border: none;
   fill: #ffff;
