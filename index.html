@@ -28,7 +28,9 @@
           >
           <ul class="header-menu-list">
             <li class="header-menu-item">
-              <a href="./index.html" class="header-menu-link">Studio</a>
+              <a href="./index.html" class="header-menu-link underline"
+                >Studio</a
+              >
             </li>
             <li class="header-menu-item">
               <a href="" class="header-menu-link">Portfolio</a>
@@ -58,7 +60,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" data-modal-open class="hero-button">Order Service</button>
         </div>
       </section>
       <section class="features">
@@ -473,7 +475,73 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="subscribe-text">Підпишіться на розсилку</p>
+          <form class="footer-form">
+            <input
+              type="email"
+              class="footer-form-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-form-btn">
+              Підписатися
+              <svg width="24" height="20" class="footer-form-btn-svg">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <button class="modal-btn-close" data-modal-close>
+          <svg width="11" height="11" class="btn-close-svg">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <label for="">
+            Name
+            <span class="modal-form-spn">
+            <input type="text" class="input-name" name="user-name" required minlength="3" maxlength="10">
+            <svg width="12" height="12" class="modal-svg">
+              <use href="./images/icons.svg#person-modal" class="modal-span-icon"></use>
+            </svg>
+          </span>
+          </label>
+          <label for="">
+            Phone
+            <span class="modal-form-spn">
+            <input type="tel" class="input-tel" name="user-tel" pattern="^380\d{9}$" maxlength="12" title="Номер повинен починатися на 380 і повинен мати 12 цифр" required>
+            <svg width="13" height="13" class="modal-svg">
+              <use  href="./images/icons.svg#phone-modal" class="modal-span-icon"></use>
+            </svg>
+          </span>
+          </label>
+          <label for="">
+            Email
+            <span class="modal-form-spn">
+            <input class="input-email" type="email" name="user-email" required>
+            <svg width="15" height="12" class="modal-svg">
+              <use href="./images/icons.svg#email-modal" class="modal-span-icon"></use>
+            </svg>
+          </span>
+          </label>
+          
+          <label for="">
+            Comment
+            <textarea class="modal-massage" name="user-message" placeholder="Text input"></textarea>
+            <div class="modal-privacy">
+            <input type="checkbox" name="user-privacy" class="privacy-input" required>
+              <span class="privacy-span">I accept the terms and conditions of the <a class="privacy-link" href="">Privacy Policy</a></span>
+          </label>
+        </div>
+          <button type="submit" class="modal-form-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
