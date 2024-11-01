@@ -516,11 +516,17 @@ img {
   line-height: 150%;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
-label {
-  display: block;
+.modal-form-div {
   margin-bottom: 8px;
+}
+.modal-form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
 }
 .input-name,
 .input-tel,
@@ -534,11 +540,16 @@ label {
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-top: 4px;
   padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-name:focus-within,
 .input-tel:focus-within,
 .input-email:focus-within {
-  outline: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
+}
+.modal-form-spn {
+  position: relative;
 }
 .modal-form-spn:focus-within {
   color: #4d5ae5;
@@ -593,8 +604,10 @@ label {
 .modal-svg {
   color: currentColor;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-btn {
   border-radius: 4px;
@@ -611,6 +624,11 @@ label {
   margin-left: 95px;
   margin-top: 24px;
   background: #4d5ae5;
+}
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: #404bbf;
+  border: none;
 }
 .privacy-input {
   width: 16px;
@@ -645,8 +663,8 @@ label {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-close-svg:hover,
-.btn-close-svg:focus {
+.modal-btn-close:hover .btn-close-svg,
+.modal-btn-close:focus .btn-close-svg {
   fill: #ffffff;
 }
 .modal-btn-close:hover,
