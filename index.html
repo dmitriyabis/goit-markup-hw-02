@@ -486,7 +486,7 @@
               name="footer-email"
             />
           </label>
-            <button type="button" class="footer-form-btn">
+            <button type="submit" class="footer-form-btn">
               Subscribe
               <svg width="24" height="24" class="footer-form-btn-svg">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -499,7 +499,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn-close" data-modal-close>
+        <button class="modal-btn-close" type="button" data-modal-close>
           <svg width="8" height="8" class="btn-close-svg">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -510,13 +510,14 @@
           <div class="modal-form-div">
               <label for="user-name" class="modal-form-label">
                 Name
+              </label>
                 <div class="modal-form-spn">
                   <input type="text" class="input-name" name="user-name" required minlength="3" maxlength="10">
                   <svg width="18"   height="24"   class="modal-svg">
                   <use href="./images/icons.svg#person-modal" class="modal-span-icon"></use>
                   </svg>
                 </div>
-            </label>
+            
           </div>
           <label for="">
             Phone
