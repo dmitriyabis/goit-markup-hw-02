@@ -656,6 +656,7 @@ img {
   background-color: #404bbf;
   border: none;
 }
+.modal-btn-close:focus,
 .modal-btn-close:hover {
   background-color: #404bbf;
   border: none;
@@ -667,6 +668,7 @@ img {
 .modal-btn-close:focus .btn-close-svg {
   fill: #ffffff;
 }
+.modal-btn-close:focus .btn-close-svg,
 .modal-btn-close:hover .btn-close-svg {
   fill: #ffffff;
 }
