@@ -247,7 +247,7 @@ img {
   background-size: cover;
   margin: 0 auto;
 }
-@media screen and(min-resolution:2dppx),
+@media screen and(min-resolution: 2dppx),
   (min-resolution: 192dpi),
   (-webkit-min-device-ratio: 2) {
   .hero {
